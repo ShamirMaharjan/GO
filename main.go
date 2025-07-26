@@ -9,6 +9,12 @@ func main() {
 	// variable()
 	// function(12, 13)
 
-	structure()
+	// structure()
+	r := rectangle{
+		length: 10,
+		width:  10,
+	}
+
+	interfaceShape(r)
 
 }

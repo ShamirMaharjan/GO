@@ -23,26 +23,26 @@ func structure() {
 
 //anonymous struct
 //this is a anonymous structure it can be used only once
-myCar := struct {
-	Make string
-	Model string
-}{
-	Make: "Toyota",
-	Model: "Corolla",
-}
+// myCar := struct {
+// 	Make string
+// 	Model string
+// }{
+// 	Make: "Toyota",
+// 	Model: "Corolla",
+// }
 
 //embedded struct
 //car is a embedded structure, so truck can access all the fields of car
-//like truct.Make, 
+//like truct.Make,
 //we dont need to use truct.car.Make
 //we can access all the fields of car directly
-type car struct{
-	Make string
+type car struct {
+	Make  string
 	Model string
-	Year int
+	Year  int
 }
 
-type truck struct{
+type truck struct {
 	car
 	Trailer bool
 }
