@@ -6,7 +6,9 @@ func main() {
 
 	fmt.Println("hello world")
 
-	variable()
-	function(12, 13)
+	// variable()
+	// function(12, 13)
+
+	structure()
 
 }
