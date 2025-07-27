@@ -16,6 +16,7 @@ func main() {
 	// }
 
 	// interfaceShape(r)
-	errorHandling()
+	// errorHandling()
+	loop()
 
 }
