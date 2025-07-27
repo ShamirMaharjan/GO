@@ -10,11 +10,12 @@ func main() {
 	// function(12, 13)
 
 	// structure()
-	r := rectangle{
-		length: 10,
-		width:  10,
-	}
+	// r := rectangle{
+	// 	length: 10,
+	// 	width:  10,
+	// }
 
-	interfaceShape(r)
+	// interfaceShape(r)
+	errorHandling()
 
 }
