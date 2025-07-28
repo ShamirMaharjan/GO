@@ -17,6 +17,7 @@ func main() {
 
 	// interfaceShape(r)
 	// errorHandling()
-	loop()
+	// loop()
+	arrayandSlices()
 
 }
