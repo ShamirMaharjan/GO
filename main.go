@@ -19,6 +19,8 @@ func main() {
 	// errorHandling()
 	// loop()
 	// arrayandSlices()
-	maps()
+	// maps()
+
+	fmt.Println(aggregate(2, 3, 4, add))
 
 }
