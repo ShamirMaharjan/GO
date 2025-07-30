@@ -21,6 +21,8 @@ func main() {
 	// arrayandSlices()
 	// maps()
 
-	fmt.Println(aggregate(2, 3, 4, add))
+	// fmt.Println(aggregate(2, 3, 4, add))
+
+	pointers()
 
 }
