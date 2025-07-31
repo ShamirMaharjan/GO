@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
@@ -25,4 +28,22 @@ func main() {
 
 	pointers()
 
+	fmt.Println("Starting...")
+
+	// Call printNumbers normally (synchronously)
+	// printNumbers("Main")
+
+	// Start a goroutine
+	go printNumbers("Goroutine-1")
+
+	// Start another goroutine
+	go printNumbers("Goroutine-2")
+
+	// Call the function normally in the main goroutine
+	printNumbers("Main")
+
+	// Important: Give goroutines time to finish before main exits
+	// Otherwise, the program might end before they print anything.
+	time.Sleep(2 * time.Second) // Sleep longer than the goroutines take
+	fmt.Println("Done!")
 }
